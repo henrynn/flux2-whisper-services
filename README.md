@@ -1,6 +1,6 @@
 # flux2-whisper-services
 
-curl -X POST -H "content-type: multipart/form-data" -F "audio_file=@./audio/issue3/0_5f9df078-2617-4fbe-a01a-5c2e0a7f5d73.wav" https://whisper.yglabs.eu.org/detect-language?output=json
+curl -X POST -H "content-type: multipart/form-data" -F "audio_file=@./audio/issue3/0_5f9df078-2617-4fbe-a01a-5c2e0a7f5d73.wav" https://whisper.henrylabs.eu.org/detect-language?output=json
 
 Add A100 pool:
 az aks nodepool add \
@@ -30,7 +30,7 @@ az aks nodepool add \
     --aks-custom-headers UseGPUDedicatedVHD=true
 
 flux bootstrap github \
---owner=yingeli \
+--owner=henrynn \
 --repository=flux2-whisper-services \
 --path=clusters/test/west-europe \
 --personal
