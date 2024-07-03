@@ -11,7 +11,7 @@ spec:
     branch: main
   secretRef:
     name: flux-system
-  url: ssh://git@github.com/yingeli/flux2-whisper-services
+  url: ssh://git@github.com/henrynn/flux2-whisper-services
 ---
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
