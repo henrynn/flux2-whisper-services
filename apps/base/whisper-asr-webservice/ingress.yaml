@@ -16,10 +16,10 @@ metadata:
 spec:
   tls:
   - hosts:
-      - whisper.yglabs.eu.org
+      - whisper.henrylabs.eu.org
     secretName: whisper-asr-webservice-tls
   rules:
-  - host: whisper.yglabs.eu.org
+  - host: whisper.henrylabs.eu.org
     http:
       paths:
       - path: /
